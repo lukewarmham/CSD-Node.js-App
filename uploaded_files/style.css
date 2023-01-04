@@ -35,7 +35,7 @@ div#nav > h1#header {
 }
 
 div#nav > h3#age {
-    font: Bender-Light, serif;
+    font-family: Bender-Light, serif;
     color: white;
     margin-left: 10px;
     position: absolute;
