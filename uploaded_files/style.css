@@ -34,11 +34,20 @@ div#nav > h1#header {
     margin: 10px 0 0 15px;
 }
 
-div#nav > h3#age {
-    font-family: Bender-Light, serif;
-    color: white;
-    margin-left: 10px;
-    position: absolute;
-    left: 22.5px;
-    top: 20px;
+div#nav > a {
+    font-family: Bender-Light;
+    font-size: 20px;
+}
+
+.home {
+    position: relative;
+    left: 100px;
+}
+
+.current-tab {
+    color: green;
+}
+
+.other-tab {
+    color: gray;
 }

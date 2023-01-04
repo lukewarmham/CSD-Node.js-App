@@ -11,4 +11,8 @@ app.get('/style.css', function (req, res) {
     res.sendFile(__dirname + "/uploaded_files/style.css");
 });
 
+app.get('/index.js', function (req, res) {
+    res.sendFile(__dirname + "/uploaded_files/index.js");
+});
+
 app.listen(3000);
