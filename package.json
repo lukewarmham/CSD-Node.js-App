@@ -1,0 +1,22 @@
+{
+  "name": "csd-node.js-app",
+  "version": "1.0.0",
+  "description": "An app im making for my 2023 CSD class",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukewarmham/CSD-2023-Node.js.git"
+  },
+  "author": "Jake Kovacocy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lukewarmham/CSD-2023-Node.js/issues"
+  },
+  "homepage": "https://github.com/lukewarmham/CSD-2023-Node.js#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
