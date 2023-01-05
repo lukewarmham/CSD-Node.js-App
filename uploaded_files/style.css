@@ -8,11 +8,6 @@ body {
     src: local("./fonts/Bender") format("opentype");
 }
 
-@font-face {
-    font-family: Bender-Light;
-    src: local("./fonts/Bender-Light") format("opentype");
-}
-
 h1 {
     font-family: Bender, serif;
     font-size: 25px;
@@ -31,23 +26,50 @@ div#nav > h1#header {
     color: white;
     margin: 0;
     padding: 0;
-    margin: 10px 0 0 15px;
+    position: absolute;
+    top: 25%;
+    left: 5%;
 }
 
-div#nav > a {
-    font-family: Bender-Light;
-    font-size: 20px;
+div#home {
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    left: 25%;
+    top: 0;
+    background-color: rgb(55, 55, 55);
 }
 
-.home {
-    position: relative;
-    left: 100px;
+div#about {
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    left: 35.25%;
+    top: 0;
+    background-color: rgb(55, 55, 55);
 }
 
-.current-tab {
-    color: green;
+div#contacts {
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    left: 45.5%;
+    top: 0;
+    background-color: rgb(55, 55, 55);
 }
 
-.other-tab {
+div#nav > div > a {
+    font-family: Bender;;
+    font-size: 30px;
+    color: white;
+    display: inline;
+    float: none;
+}
+
+div#nav > div > a.current-tab {
     color: gray;
+}
+
+div#nav > div > a.other-tab {
+    color: white;
 }

@@ -3,6 +3,7 @@
 const express = require('express');
 const app = express();
 
+// HOME PAGE
 app.get('/', function (req, res) {
     res.sendFile(__dirname + "/uploaded_files/index.html");
 });
@@ -12,6 +13,7 @@ app.get('/style.css', function (req, res) {
 });
 
 app.get('/index.js', function (req, res) {
+    res.type('.js');
     res.sendFile(__dirname + "/uploaded_files/index.js");
 });
 
