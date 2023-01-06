@@ -64,6 +64,7 @@ div#nav > div > a {
     color: white;
     display: inline;
     float: none;
+    text-decoration: none;
 }
 
 div#nav > div > a.current-tab {
