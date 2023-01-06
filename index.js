@@ -3,18 +3,12 @@
 const express = require('express');
 const app = express();
 
-// HOME PAGE
-app.get('/', function (req, res) {
-    res.sendFile(__dirname + "/uploaded_files/index.html");
-});
+// include other pages
+const about = require('./about.js');
+const home = require('./home.js');
 
-app.get('/style.css', function (req, res) {
-    res.sendFile(__dirname + "/uploaded_files/style.css");
-});
-
-app.get('/index.js', function (req, res) {
-    res.type('.js');
-    res.sendFile(__dirname + "/uploaded_files/index.js");
-});
+// initialize pages
+app.use('/about', about.about);
+app.use('/', home.home);
 
 app.listen(3000);
