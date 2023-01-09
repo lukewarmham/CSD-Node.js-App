@@ -9,8 +9,8 @@ const home = require('./other_pages/home.js');
 const contacts = require('./other_pages/contacts.js');
 
 // initialize pages
-app.use('/about', about.about);
 app.use('/', home.home);
+app.use('/about', about.about);
 app.use('/contacts', contacts.contacts);
 
 app.listen(3000);
