@@ -4,24 +4,16 @@
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
-}
-
-.background {        
-    position: absolute;
-    background-position: center;
-    left: -5%;
-    top: -5%;
-    z-index: -1;
-    width: 110%;
-    height: 110%;
-    -webkit-filter: blur(3px); /* Safari 6.0 - 9.0 */
-    filter: blur(3px);
+    overflow-x: hidden;
+    background-color: rgb(25, 25, 25);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Jetbrains Mono';
     color: white;
+    margin-top: 27.5px;
+    margin-bottom: 0px;
+    margin-left: 10px;
 }
 
 p {
@@ -29,6 +21,46 @@ p {
     font-size: 20px;
     margin-left: 10px;
     color: white;
+}
+
+div.code {
+    width: 95%;
+    float: left;
+    margin-left: 2.5%;
+    background-color: #3c3c3c;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 #3c3c3c;
+    margin-bottom: 1.25%;
+}
+
+div.code > p {
+    font-weight: bold;
+    font-family: 'Jetbrains Mono';
+    font-size: 17.5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+}
+
+div.code > p > span.purple {
+    color: rgb(137, 52, 255);
+}
+
+div.code > p > span.yellow {
+    color: rgb(240, 255, 104);
+}
+
+div.code > p > span.green {
+    color: rgb(51, 255, 0);
+}
+
+div.code > p > span.comment {
+    color: rgb(24, 120, 0);
+}
+
+div.code > p > span.blue {
+    color: rgb(0, 162, 255);
 }
 
 div#nav {
